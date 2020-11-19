@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1>Get all names</h1>
+	{% for i in json %}
+ 		<p>{{ i['name'] }}</p>
+	{% endfor %}
+{% endblock content %}
