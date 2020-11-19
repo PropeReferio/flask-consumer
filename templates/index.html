@@ -1,4 +1,29 @@
 {% extends "layout.html" %}
 {% block content %}
-  <h1>Home page</h1>
+	<h1>Home page</h1>
+
+	<h3>Get one name/id</h3>
+	<form method="POST" action="/get-name">
+		Name : <input type="text" name="name">
+		<input type="submit">
+	</form>
+
+	<h3>Add a name</h3>
+	<form method="POST" action="/add-name">
+		Name : <input type="text" name="add_name">
+		<input type="submit">
+	</form>
+
+	<h3>Change a name</h3>
+	<form method="POST" action="/change-name">
+		Old name : <input type="text" name="old_name">
+		New name : <input type="text" name="new_name">
+		<input type="submit">
+	</form>
+
+	<h3>Delete a name</h3>
+	<form method="POST" action="/delete-name">
+		Name to delete : <input type="text" name="erase_name">
+		<input type="submit">
+	</form>
 {% endblock content %}
